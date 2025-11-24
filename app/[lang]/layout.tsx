@@ -32,7 +32,7 @@ const navbar = (
   <Navbar
     logo={
       <Image
-        src='/logo.png'
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo.png`}
         alt='logo'
         width='0'
         height='0'

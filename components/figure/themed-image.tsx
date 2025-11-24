@@ -41,8 +41,7 @@ export default function ThemedImage({
     }
 
     const candidates: string[] = [];
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-    const prefix = basePath ? `${basePath}` : '';
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH;
 
     if (hasThemedImage) {
       candidates.push(`${prefix}/${baseName}-${derivedTheme}.${extension}`);
