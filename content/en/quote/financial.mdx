@@ -1,1 +1,35 @@
-# Financial
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Financials
+
+<FigureProvider>
+
+Financials can be viewed via the Menu and via the Quote Dashboard window.
+
+Window invoking options:
+1. Quote → Financials  
+2. Quote Dashboard → Financials  
+3. Right-click a symbol → Financials
+
+<Figure
+  baseName='quote/financials/financials'
+  alt='Pro 11 Trade Financials Fiscal'
+  description='Financials'
+/>
+
+## Filter Details
+
+1. **Filter by Symbol** – Filter by symbol by clicking on the filter text box.  
+2. **Filter by Period Basis** – Filter by calendar or by fiscal period basis by selecting the option.  
+3. **Filter by Period** – Filter by period by selecting from the drop down.  
+4. **Filter by Summary/Detailed View** – Filter by summary view or detailed view by selecting the option.  
+5. **Filter by Statements** – If the Detailed View filter is selected, you can filter by Statements as well.  
+6. **Filter by Quarter** – Filter by quarter by selecting the From and To quarter drop down.
+
+<Figure
+  baseName='quote/financials/filters'
+  alt='Pro 11 Trade Financials Filters'
+  description='Filter Details'
+/>
+
+</FigureProvider>

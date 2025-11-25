@@ -1,1 +1,48 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
 # Price Alert
+
+<FigureProvider>
+
+Price Alert details can be viewed and created via the Menu.
+
+Window invoking options:
+1. Quote → Price Alert
+
+## Create Price Alert
+
+STEPS
+
+1. Click on the button in the *Alert Summary* window to open the *Price Alert* creation window.  
+2. Select the symbol you wish to create the alert for by clicking on the search symbol text box.  
+3. Under *Conditions*, select conditions from the drop down and enter values for the conditions.  
+4. To add more than one condition, click on the button, and add conditions as in step 3.  
+5. Under *Match*, select if you wish to match all selected conditions (*All Conditions*), or any one of the added conditions (*Any Condition*).  
+6. Select the *Delivery Types* and *Delivery Frequency* as required for the alert.  
+7. Add a message to display for the alert.  
+8. Click on the **Save Alert** button to save alert.  
+9. Click on the **Save and Create New** button to save alert and create another alert.
+
+<Figure
+  baseName='quote/price-alert/price-alert'
+  alt='Pro 11 Trade Price Alert'
+  description='Price Alert summary'
+/>
+
+## Delivery Types and Delivery Frequency
+
+1. **Delivery Types** – *Pop up window, Corner Notification, Sound, Email, Telegram, and DFN Mobile app*.  
+2. **Delivery Frequency** – *Once only, Once per Day, Once per Hour*.
+
+## Filter Alerts
+
+• **Filter by Symbol** – Filter created alerts by a symbol by clicking on the symbol filter text box, and select or type the required symbol.  
+• **Filter by Pending/Triggered/Expired Alerts** – Filter created alerts by Pending, Triggered or Expired alert types by selecting from the drop down.
+
+## Alert Options
+
+▪ **Edit** – Right-click on an alert and select the **Edit** option or click on the icon to edit the created alert.  
+▪ **Delete** – Right-click on an alert and select the **Delete** option or click on the icon to delete the created alert.  
+▪ **Trigger Logs** – Right-click on an alert and select the **Trigger Logs** option to view the log details of the alert that was created.
+
+</FigureProvider>
