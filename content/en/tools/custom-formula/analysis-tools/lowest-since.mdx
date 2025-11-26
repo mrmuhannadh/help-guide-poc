@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Lowest Since
+
+SYNTAX LowestSince ( Nth, EXPRESSION, DATAARRAY )
+
+This function looks at all the data available. It then evaluates the condition detailed in EXPRESSION. Afterward, it counts back from the most recent point of data till it finds the Nth number of times the EXPRESSION was true. From that point, it looks forward at DATAARRAY and returns the lowest value found.
+
+Eg:
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+a2 = MVSimple(10,close,MA);
+
+out = LowestSince(a1, '>', a2, 'close', 1);
+
+```
+
+<FigureProvider>
+ <Figure baseName='tools/analysis-tools/lowest-since' alt='Lowest Since' description='Lowest Since' />
+</FigureProvider> 

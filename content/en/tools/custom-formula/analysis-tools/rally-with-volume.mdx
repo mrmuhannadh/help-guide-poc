@@ -1,0 +1,13 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# RallyWithVolume
+
+SYNTAX RallyWithVol()
+
+This will return a +1 whenever a rally with volume occurs. It will continue to return this same value until either a Reaction, an Inside day, or an Outside day occur. At any time where RallyWithVol() is not equal to +1, it will be equal to 0.
+
+A rally with volume occurs when today's high is greater than the previous day's high and today's low is greater than or equal to the previous day's low. Today's volume must also be greater than the previous day's volume.
+
+Eg: RallyWithVol();
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/rallywithvol' alt='RallyWithVol' description='RallyWithVolume' /> </FigureProvider>

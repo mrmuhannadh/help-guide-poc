@@ -1,0 +1,13 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Rally
+
+SYNTAX rally()
+
+This will return a +1 whenever a rally occurs. It will continue to return this same value until either a Reaction, an Inside day, or an Outside day occur. At any time where Rally() is not equal to +1, it will be equal to 0.
+
+A rally day occurs when today's high is greater than the previous day's high and today's low is greater than or equal to the previous day's low.
+
+Eg: Rally();
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/rally' alt='Rally' description='Rally' /> </FigureProvider>

@@ -1,0 +1,13 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Reaction
+
+SYNTAX Reaction()
+
+This will return a +1 whenever a reaction occurs. It will continue to return this same value until either a Rally, an Inside day, or an Outside day occur. At any time where Reaction() is not equal to +1, it will be equal to 0.
+
+A reaction day occurs when today's high is less than or equal to the previous day's high and today's low is less than the previous day's low.
+
+Eg: Reaction();
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/reaction' alt='Reaction' description='Reaction' /> </FigureProvider>

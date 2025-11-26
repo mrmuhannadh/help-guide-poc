@@ -1,0 +1,19 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# ReactionWithVolume
+
+SYNTAX ReactionWithVol()
+
+This will return a +1 whenever a reaction with volume occurs.  
+It will continue to return this same value until either a Rally, an Inside day, or an Outside day occur.  
+At any time where ReactionWithVol() is not equal to +1, it will be equal to 0.
+
+A reaction with volume occurs when:
+
+- today's high is less than or equal to the previous day's high  
+- today's low is less than the previous day's low  
+- **today's volume is greater than the previous day's volume**
+
+Eg: ReactionWithVol();
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/reactionwithvol' alt='ReactionWithVolume' description='Reaction With Volume' /> </FigureProvider>

@@ -1,0 +1,16 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Peak
+
+SYNTAX Peak( Nth, DATAARRAY, % MINIMUM CHANGE )
+
+Using the Zig Zag function, this calculates the value DATAARRAY had at a peak. How many peaks back to reference is contained in the Nth parameter. %MINIMUM CHANGE is used by the Zig Zag in calculating the peaks and troughs.
+
+Eg:
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = Peak(1, a1, 0.01);
+```
+<FigureProvider> <Figure baseName='tools/analysis-tools/peak' alt='Peak' description='Peak' /> </FigureProvider>

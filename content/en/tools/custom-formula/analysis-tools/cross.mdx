@@ -1,0 +1,25 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Cross
+
+SYNTAX cross(DATAARRAY 1, DATAARRAY 2)
+
+This function returns a 1 on the period that DATAARRAY 1 rises above DATAARRAY 2.  
+At all other times, a 0 is returned.
+
+Eg:
+
+```jsx
+a1 = MVSimple(9, close, MA);
+
+a2 = MVSimple(10, close, MA);
+
+out = Cross(a1, a2);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/cross'
+  alt='Cross'
+  description='Cross'
+/>
+</FigureProvider>

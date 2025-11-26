@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Lowest
+
+SYNTAX Lowest( DATAARRAY )
+
+This function examines the entire list of values in DATAARRAY and returns the one with the lowest value. This will mainly be used to check for new lows though other uses may be possible.
+
+Eg: Lowest('close')
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = Lowest(a1);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/lowest'
+  alt='Lowest'
+  description='Lowest'
+/>
+</FigureProvider>

@@ -1,0 +1,17 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Gap Down
+
+SYNTAX GapDown()
+
+Plots a +1 on the day a security's prices gap down. Otherwise a 0 is plotted. A gap down occurs if yesterday's low is greater than today's high.
+
+Eg: GapDown()
+
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/gap-down'
+  alt='GapDown'
+  description='GapDown'
+/>
+</FigureProvider>

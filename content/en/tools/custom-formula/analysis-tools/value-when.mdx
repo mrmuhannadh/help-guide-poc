@@ -1,0 +1,15 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# ValueWhen
+
+SYNTAX ValueWhen ( Nth, EXPRESSION, DATAARRAY )
+
+This looks at all the data in the chart and evaluates when the EXPRESSION was true. Then starting from the most recent, it counts back Nth times and reports the value of DATAARRAY.
+
+Eg: ValueWhen(1,'close > 20','close')
+
+<FigureProvider>
+    <Figure baseName="tools/analysis-tools/valuewhen/formula1" alt="ValueWhen Formula 1" />
+    <Figure baseName="tools/analysis-tools/valuewhen/formula2" alt="ValueWhen Formula 2" description="ValueWhen Formula" />
+    <Figure baseName="tools/analysis-tools/valuewhen/valuewhen" alt="ValueWhen" description="ValueWhen" />
+</FigureProvider>

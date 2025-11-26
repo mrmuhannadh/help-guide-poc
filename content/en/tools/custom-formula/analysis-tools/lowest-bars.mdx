@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Lowest Bars
+
+SYNTAX Lowest( DATAARRAY )
+
+This function reads the DATAARRAY and returns the number of periods that have past since its lowest value
+
+Eg: LowestBars('close')
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = LowestBars(a1);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/lowest-bars'
+  alt='Lowest Bars'
+  description='Lowest Bars'
+/>
+</FigureProvider>

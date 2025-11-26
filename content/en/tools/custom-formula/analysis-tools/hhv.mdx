@@ -1,0 +1,26 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# HHV
+
+SYNTAX HHV( DATAARRAY, PERIODS )
+
+Calculates the highest value of the DATAARRAY from the most recent PERIODS number of records. The calculation includes the current period.
+
+Eg:
+
+```jsx
+HHV('close', 5)
+
+-------------------------------------
+
+a1 = MVSimple(9,close,MA);
+
+out = HHV(a1, 5);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/hhv'
+  alt='HHV'
+  description='HHV'
+/>
+</FigureProvider>

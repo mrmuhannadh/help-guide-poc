@@ -1,0 +1,19 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Lowest Since Bars
+
+SYNTAX LowestSinceBars( Nth, EXPRESSION, DATAARRAY )
+
+This function looks at all the data available. It then evaluates the condition detailed in EXPRESSION. Afterward, it counts back from the most recent point of data till it finds the Nth number of times the EXPRESSION was true. From that point, it looks forward at DATAARRAY and finds the lowest value. The result is the number of periods that have passed since this lowest value.
+
+Eg:
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+a2 = MVSimple(10,close,MA);
+
+out = LowestSinceBars(a1, '>', a2, 'close', 1);
+```
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/lowest-since-bars' alt='Lowest Since Bars' description='Lowest Since Bars' /> </FigureProvider>

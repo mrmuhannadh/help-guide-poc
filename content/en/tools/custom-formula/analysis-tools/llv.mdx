@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# LLV
+
+SYNTAX LLV( DATAARRAY, PERIODS )
+
+Calculates the lowest value of the DATAARRAY from the most recent PERIODS number of records. The calculation includes the current period.
+
+Eg: LLV('close', 5)
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = LLV(a1, 5);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/llv'
+  alt='LLV'
+  description='LLV'
+/>
+</FigureProvider>

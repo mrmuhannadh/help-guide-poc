@@ -1,0 +1,19 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Peak Bars
+
+SYNTAX PeakBars( Nth, DATAARRAY, % MINIMUM CHANGE )
+
+This function calculates how many periods have passed since a peak in the specified DATAARRAY has occurred.  
+The Nth value is the number of peaks back to count.  
+The % MINIMUM CHANGE is used by the Zig Zag function to calculate when a peak has occurred.
+
+Eg: PeakBars(2, 'close', 0.02);
+
+```jsx
+a1 = MVSimple(9, close, MA);
+
+out = PeakBars(1, a1, 0.01);
+```
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/peak-bars' alt='Peak Bars' description='Peak Bars' /> </FigureProvider>

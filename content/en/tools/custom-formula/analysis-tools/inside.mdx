@@ -1,0 +1,18 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Inside
+
+SYNTAX Inside()
+
+This will return a +1 whenever an inside day occurs. It will continue to return this same value until either a Rally, Reaction, or an Outside day occur. At any time where Inside() is not equal to +1, it will be equal to 0.
+
+An inside day is defined as any period where the current high is less than the previous period’s high and the current low is greater than the previous period’s low.
+
+Eg: Inside()
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/inside'
+  alt='Inside'
+  description='Inside'
+/>
+</FigureProvider>

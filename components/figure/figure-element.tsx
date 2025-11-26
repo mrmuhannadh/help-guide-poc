@@ -16,11 +16,15 @@ type Props = {
 export default function ThemedLocaleFigure({ baseName, alt, description = '', ...props }: Props) {
   const { increment } = useFigureCounter();
   const [figureNumber, setFigureNumber] = useState(0);
+  const [captionEnabled, setCaptionEnabled] = useState(false);
 
   useEffect(() => {
-    setFigureNumber(increment(alt));
+    if (description.trim() !== '') {
+      setCaptionEnabled(true);
+      setFigureNumber(increment(alt));
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [description]);
 
   return (
     <figure className='my-8'>
@@ -29,9 +33,11 @@ export default function ThemedLocaleFigure({ baseName, alt, description = '', ..
         alt={alt}
         {...props}
       />
-      <figcaption className='text-md mt-2 text-gray-500 dark:text-neutral-400'>
+      {captionEnabled && (
+        <figcaption className='text-md mt-2 text-gray-500 dark:text-neutral-400'>
         <span className='font-bold'>Figure {figureNumber}:</span> {description}
       </figcaption>
+      )}
     </figure>
   );
 }

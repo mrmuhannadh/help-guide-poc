@@ -1,0 +1,55 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Reference
+
+SYNTAX REF(DATAARRAY, PERIODS)
+
+This returns the value of DATAARRAY on a previous or subsequent period. The time to be accessed is expressed by PERIODS. A negative number looks back in time while a positive number looks into the future.
+
+Eg: REF('close',5)
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/reference' alt='Reference' description='Reference' /> </FigureProvider>
+
+**Note:**\
+REF Only supports the below values mentioned in the table.
+
+If a script needs history data, it should define the variable with the key ‘Period’ or use ‘period’ as the variable.
+
+Eg:
+```jsx
+jawPeriod = input(12);
+period = input(20);
+
+---------------------------
+
+myZ = ZigZag(close,3,percentage,zigzag);
+
+assignValue('myZ', myZ);
+
+out = myZ < REF('myZ',-2);
+```
+
+| Field Name        | Value           |
+| ----------------- | --------------- |
+| Offer             | BestOffer       |
+| Bid               | BestBid         |
+| Change            | Chg             |
+| % Change          | PctChg          |
+| Cash In Trades    | CashInTrades    |
+| Cash In Turnover  | CashInTurnover  |
+| Cash In Volume    | CashInVolume    |
+| Close             | Close           |
+| Cash Out Trades   | CashOutTrades   |
+| Cash Out Volume   | CashOutVolume   |
+| Cash Out Turnover | CashOutTurnover |
+| High              | High            |
+| Low               | Low             |
+| Last Traded       | LastTraded      |
+| Net Cash Trades   | NetCashTrades   |
+| Net Cash          | NetCashTurnover |
+| Net Cash Volume   | NetCashVolume   |
+| Open              | Open            |
+| Prev. Closed      | PrevClose       |
+| Turnover          | turnover        |
+| Volume            | volume          |
+| VWAP              | vwap            |

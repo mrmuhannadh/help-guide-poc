@@ -1,0 +1,24 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Highest Since
+
+SYNTAX HighestSince ( Nth, EXPRESSION, DATAARRAY )
+
+This function looks at all the data available. It then evaluates the condition detailed in EXPRESSION. Afterward, it counts back from the most recent point of data till it finds the Nth number of times the EXPRESSION was true. From that point, it looks forward at DATAARRAY and returns the highest value found.
+
+Eg:
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+a2 = MVSimple(10,close,MA);
+
+out = HighestSince(a1, '>', a2, 'close', 1);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/highest-since'
+  alt='Highest Since'
+  description='HighestSince'
+/>
+</FigureProvider>

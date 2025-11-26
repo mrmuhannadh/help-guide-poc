@@ -1,0 +1,11 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Trough
+
+SYNTAX    Trough( Nth, DATAARRAY, % MINIMUM CHANGE )
+
+Using the Zig Zag function, this calculates the value DATAARRAY had at a trough. How many troughs back to reference is contained in the Nth parameter. %MINIMUM CHANGE is used by the Zig Zag in calculating the peaks and troughs.
+
+Eg: Trough(1,'close',0.02);
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/trough' alt='Trough' description='Trough' /> </FigureProvider>

@@ -1,1 +1,38 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
 # Identifiers
+
+- Identifiers are names used for user-defined variables.
+- They must begin with an uppercase (A–Z) or lowercase (a–z) letter, or an underscore (_).
+- The next characters can be letters, underscores, or digits (0–9).
+- They are case-sensitive.
+
+Here are some examples:
+
+myVar  
+\_myVar  
+my123Var
+
+If you pass any variables (DataArray, values) to any function, use them in quotes.
+
+Ex:
+
+REF('close',5)
+
+- If a script needs history data, it should define the variable with the key ‘Period’ or use ‘period’ as the variable.
+
+Ex:
+
+jawPeriod = input(12);\
+period = input(20);
+
+
+<FigureProvider>
+
+<Figure
+  baseName='tools/identifiers/identifiers'
+  alt='Identifiers for'
+  description='Identifiers'
+/>
+
+</FigureProvider>

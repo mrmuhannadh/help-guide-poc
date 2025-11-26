@@ -1,0 +1,24 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Cross Over
+
+SYNTAX crossesOver(source1, source2)
+
+The source1-series is defined as having crossed over source2-series if, on the current bar, the value of source1 is greater than the value of source2, and on the previous bar, the value of source1 was less than or equal to the value of source2.
+
+Eg:
+
+```jsx
+a1 = MVSimple(100,close,MA);
+
+a2 = MVSimple(10,close,MA);
+
+out = crossesOver(a1, a2);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/cross-over'
+  alt='Cross Over'
+  description='CrossOver'
+/>
+</FigureProvider>

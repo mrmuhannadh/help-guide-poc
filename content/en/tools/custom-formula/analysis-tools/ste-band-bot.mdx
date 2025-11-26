@@ -1,0 +1,11 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# STEBandBot
+
+SYNTAX STEBandBot( DATAARRAY, PERIODS, ERRORS )
+
+This calculates the value of the bottom Standard Error Band of the specified DATAARRAY. The result is shifted downward by the number of standard errors specified by ERRORS.
+
+Eg: STEBandBot('close',5,0.01);
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/stebandbot' alt='STEBandBot' description='STEBandBot' /> </FigureProvider>

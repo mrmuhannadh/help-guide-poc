@@ -1,0 +1,27 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# HHV Bars
+
+SYNTAX HHVBars( DATAARRAY, PERIODS )
+
+Looks at the last PERIODS number of records in DATAARRAY. This function then returns how many periods have passed since the highest value of those records examined.
+Remember that this function always includes the current period in its calculations.
+
+Eg:
+
+```jsx
+HHVBars('close', 5)
+
+-------------------------------------
+
+a1 = MVSimple(9,close,MA);
+
+out = HHVBars(a1, 5);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/hhv-bars'
+  alt='HHV Bars'
+  description='HHV Bars'
+/>
+</FigureProvider>

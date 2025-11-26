@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Highest
+
+SYNTAX Highest( DATAARRAY )
+
+This function examines the entire list of values in DATAARRAY and returns the one with the greatest value.
+
+Eg: Highest('close')
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = Highest(a1);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/highest'
+  alt='HHV Bars'
+  description='HHV Bars'
+/>
+</FigureProvider>

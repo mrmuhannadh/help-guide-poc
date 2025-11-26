@@ -1,0 +1,19 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Outside
+
+SYNTAX outside()
+
+This will return a +1 whenever an outside day occurs. It will continue to return this same value until either a Rally, Reaction, or an Inside day occurs. At any time where Outside() is not equal to +1, it will be equal to 0.
+
+An outside day is defined as any period where the current high is greater than the previous period’s high and the current low is less than the previous period’s low.
+
+Eg: Outside()
+
+<FigureProvider>
+  <Figure
+    baseName='tools/analysis-tools/outside'
+    alt='Outside'
+    description='Outside'
+  />
+</FigureProvider>

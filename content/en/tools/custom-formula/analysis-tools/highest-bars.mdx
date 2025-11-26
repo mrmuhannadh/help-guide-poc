@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Highest Bars
+
+SYNTAX HighestBars( DATAARRAY )
+
+This function reads the DATAARRAY and returns the number of periods that have past since its highest value.
+
+Eg: HighestBarsv('close')
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = HighestBars(a1);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/highest-bars'
+  alt='Highest Bars'
+  description='HighestBars'
+/>
+</FigureProvider>

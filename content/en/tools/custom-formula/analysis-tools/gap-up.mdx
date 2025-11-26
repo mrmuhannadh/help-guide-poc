@@ -1,0 +1,17 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Gap Up
+
+SYNTAX GapUp()
+
+Plots a +1 on the day a security's prices gap up. Otherwise a 0 is plotted. A gap up occurs if yesterday's high is less than today's low.
+
+Eg: GapUp()
+
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/gap-up'
+  alt='GapUp'
+  description='GapUp'
+/>
+</FigureProvider>

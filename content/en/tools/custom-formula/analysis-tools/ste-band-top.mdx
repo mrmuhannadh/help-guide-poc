@@ -1,0 +1,11 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# STEBandTop
+
+SYNTAX STEBandTop ( DATAARRAY, PERIODS, ERRORS )
+
+This calculates the value of the top Standard Error Band of the specified DATAARRAY. The result is shifted upward by the number of standard errors specified by ERRORS.
+
+Eg: STEBandTop('close',5,0.01);
+
+<FigureProvider> <Figure baseName='tools/analysis-tools/stebandtop' alt='STEBandTop' description='STEBAndTop' /> </FigureProvider>

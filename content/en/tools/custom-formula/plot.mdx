@@ -1,1 +1,38 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
 # Plot
+
+Plotting the result in the chart with drawing options.
+
+Eg:  
+* x = Open  
+* y = Low  
+* plot(x)  
+* plot(y)
+
+Further, we can use **FillRegion** option to plot and fill colour.
+
+```jsx
+lineA = Open;
+lineB = Low;
+
+plot(lineA);
+plot(lineB);
+
+FillRegion(lineA > lineB, lineA, lineB);
+```
+<FigureProvider>
+
+<Figure
+  baseName='tools/plot/plotx'
+  alt='Plot X'
+  description='Plot X'
+/>
+
+<Figure
+  baseName='tools/plot/custom-bollinger-bands'
+  alt='Custom Bollinger Bands'
+  description='Custom Bollinger Bands'
+/>
+
+</FigureProvider>

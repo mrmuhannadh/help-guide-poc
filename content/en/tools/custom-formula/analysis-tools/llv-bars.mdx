@@ -1,0 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# LLV Bars
+
+SYNTAX LLVBars( DATAARRAY, PERIODS )
+
+Looks at the last PERIODS number of records in DATAARRAY. This function then returns how many periods have passed since the lowest value of those records examined. Remember that this function always includes the current period in its calculations.
+
+Eg: LLVBars('close', 5)
+
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = LLVBars(a1, 5);
+```
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/llv-bars'
+  alt='LLVBars'
+  description='LLVBars'
+/>
+</FigureProvider>

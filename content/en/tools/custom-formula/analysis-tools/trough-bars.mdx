@@ -1,0 +1,11 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# TroughBars
+
+SYNTAX TroughBars( Nth, DATAARRAY, % MINIMUM CHANGE)
+
+This function calculates how many periods have passed since a trough in the specified DATAARRAY has occurred. The Nth value is the number of troughs back to count. The % MINIMUM CHANGE is used by the Zig Zag function to calculate when a trough has occurred.
+
+Eg: TroughBars(1,'close',0.02);
+    
+<FigureProvider> <Figure baseName="tools/analysis-tools/troughbars" alt="Trough Bars" description="TroughBars" /> </FigureProvider>

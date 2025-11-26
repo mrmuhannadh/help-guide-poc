@@ -1,1 +1,22 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
 # Bars Since
+
+SYNTAX BarsSince( DATAARRAY )
+
+This function counts how much time has passed since an event occurred
+
+Eg:
+```jsx
+a1 = MVSimple(9,close,MA);
+
+out = BarsSince(a1,'>',25.38);
+```
+
+<FigureProvider>
+<Figure
+  baseName='tools/analysis-tools/bar-since'
+  alt='Bars Since'
+  description='Bars Since'
+/>
+</FigureProvider>

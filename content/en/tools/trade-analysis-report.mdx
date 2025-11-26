@@ -1,1 +1,27 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
 # Trade Analysis Report
+
+View the Trades Analysis Report in this window. This report will list the following sections:
+
+- Top 25 Trades by Volume
+- Top 25 Trades by Value
+- Largest Trade for each Stock by Volume
+- Largest Trade for each Stock by Value
+- Turnover Breakdown
+
+Window invoking options:
+
+Tools > Trade Analysis Report
+
+<FigureProvider>
+  <Figure
+    baseName="tools/trade-analysis-report/pro11-trade-analysis-report-1"
+    alt="Pro 11 Trade Analysis report 1"
+  />
+  <Figure
+    baseName="tools/trade-analysis-report/pro11-trade-analysis-report-2"
+    alt="Pro 11 Trade Analysis report 2"
+    description="Trade Analysis Report"
+  />
+</FigureProvider>
