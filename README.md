@@ -112,9 +112,16 @@ export default meta;
     /public/settings/application-settings/new-settings
 ```
 
-2. Store the image inside it with proper name
+2. Store the image inside it with proper name 
+**Note: If a image has dark and light modes join -dark / -light with file name as below**
+Ex: File name = my-image.png
+-> my-image-dark.png
+-> my-image-light.png
+# Refer public/settings/general-setting
+
 ```bash
-    /public/settings/application-settings/new-settings/my-image.png
+    /public/settings/application-settings/new-settings/my-image-dark.png
+    /public/settings/application-settings/new-settings/my-image-light.png
 ```
 
 3. Import Figure and FigureProvider on .mdx file
@@ -147,7 +154,7 @@ Add this on first line
     //mdx content
  </FigureProvider>
 ```
-
+# Note: If a image doesn't have dark/light set property hasThemedImage={false} (Refer login-window.mdx)
 ## MDX tips
 
 * #Name : For title of the page

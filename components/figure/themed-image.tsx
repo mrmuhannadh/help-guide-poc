@@ -18,7 +18,7 @@ export default function ThemedImage({
   baseName,
   alt = '',
   extension = 'png',
-  hasThemedImage = false,
+  hasThemedImage = true,
   ...props
 }: Props) {
   const { theme = 'system' } = useTheme();
