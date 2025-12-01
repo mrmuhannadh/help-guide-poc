@@ -164,7 +164,17 @@ Add this on first line
 
 Find More about MDX Components: https://mdxjs.com/table-of-components/
 
+📦 Distribution
+When preparing the User Guide for deployment, follow the steps below:
 
+1. Make sure you have Nginx installed on your server or hosting environment.
+2. Your FileServer version must be 2.5.3 or higher.
+3. From the root directory, run:
+```bash
+npm run build
+```
+4. Rename the output folder 'out' into 'user-guide'
+5. Deploy the 'user-guide' folder on your server
 
 //TODO: Remove after review
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).

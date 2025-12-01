@@ -1,4 +1,5 @@
 const meta = {
+  'installation': '',
   'login-window': '',
   menu: '',
   'quick-tips': '',

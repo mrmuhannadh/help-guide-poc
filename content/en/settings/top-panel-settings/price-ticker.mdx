@@ -1,0 +1,59 @@
+import { FigureProvider, Figure } from '@/components/figure';
+
+# Price Ticker
+
+<FigureProvider>
+    The Price Ticker will be displayed once the Market is open, at the top or bottom of the
+    application window based on where it was setup, as in *Figure 1*.
+
+    The Price Ticker will display the following details:
+
+    - Symbol name  
+    - Quantity @ traded price  
+    - Change / Change %  
+
+    If you click on a symbol in the ticker, it will open the Detail Quote of that symbol.
+    <Figure
+        baseName="settings/price-ticker/price-ticker"
+        alt="Pro 11 Trade Price Ticker Settings"
+        description="Price Ticker"
+    />
+
+    ## **Ticker Right-click Options**
+
+    **STEPS**
+
+    1. Right-click anywhere on the Price/News Ticker panel to view the below options,  
+    as in *Figure 3 & 4*.  
+    If the market is closed, you can still right-click and view these:
+
+    - **Ticker Settings** – Edit ticker settings.  
+    - **Add New Price Ticker** – Add a new Price Ticker.  
+    - **Add New News Ticker** – Add a new News Ticker.  
+    - **Close Ticker** – Close the ticker panel.  
+    - **Move Down** – Move the *Price/News Ticker* one level down.  
+    - **Move Up** – Move the *Price/News Ticker* one level up.  
+    - **Market Windows** – Open market windows like DBP, Graph, T&S, Detail Quote,  
+        as in *Figure 2*.
+
+    <Figure
+        baseName="settings/price-ticker/price-ticker-right-click"
+        alt="Price Ticker Right Click Options"
+        description="Price ticker right-click options"
+    />
+
+    ## **Ticker Settings**
+
+    **STEPS**
+
+    1. To update ticker settings, right-click anywhere on the ticker panel  
+    and click **_Ticker Settings_** as in *Figure 4*.
+
+    2. This will open the ticker settings window, as in *Figure 5*.
+
+    <Figure
+        baseName="settings/price-ticker/trade-settings"
+        alt="Trade Settings"
+        description="Trade Settings"
+    />
+</FigureProvider>
