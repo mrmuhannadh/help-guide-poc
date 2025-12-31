@@ -145,20 +145,22 @@ export default meta;
     /public/settings/application-settings/new-settings/my-image-light.png
 ```
 
-3. Import Figure and FigureProvider on .mdx file
+3. To minimize image file size, use image compressors (https://tinify.com/) to compress the images before committing to the repository. You can use `scripts/image-compressor.js` file with appropriate file path with tinyfy API token to do this via terminal.
+
+4. Import Figure and FigureProvider on .mdx file
    Add this on first line
 
 ```js
 import { FigureProvider, Figure } from '@/components/figure';
 ```
 
-4. Keep your mdx content inside the FigureProvider as below
+5. Keep your mdx content inside the FigureProvider as below
 
 ```js
 <FigureProvider>//mdx content</FigureProvider>
 ```
 
-5. Use Figure component
+6. Use Figure component
 
 - baseName = Path of the image
 - alt = Text which will appear when the image is not loaded
