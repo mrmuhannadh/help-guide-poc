@@ -18,7 +18,7 @@ export default function ThemedImage({
   baseName,
   alt = '',
   extension = 'png',
-  hasThemedImage = true,
+  hasThemedImage = false, // TODO: [Chathuranga] Change default to true once themed images are added
   ...props
 }: Props) {
   const { theme = 'system' } = useTheme();
