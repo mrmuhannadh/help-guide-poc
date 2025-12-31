@@ -35,8 +35,8 @@ export default function ThemedLocaleFigure({ baseName, alt, description = '', ..
       />
       {captionEnabled && (
         <figcaption className='text-md mt-2 text-gray-500 dark:text-neutral-400'>
-        <span className='font-bold'>Figure {figureNumber}:</span> {description}
-      </figcaption>
+          <span className='font-bold'>Figure {figureNumber}:</span> {description}
+        </figcaption>
       )}
     </figure>
   );
